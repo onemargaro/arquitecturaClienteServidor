@@ -2,6 +2,16 @@
 #include <sys/types.h>
 #include <unistd.h>
 
+/**
+ * Margarito Sánchez Baños
+ * Programa que crea un proceso zombie
+ * Durmiendo al padre y matando al hijo
+ * este no puede morir hasta que el padre
+ * se lo permita
+ * @param  argc numero de argumentos pasados
+ * @param  argv argumentos pasados
+ * @return      0 si todo sale bien
+ */
 int main(int argc, char *argv[])
 {
   pid_t child_pid;
